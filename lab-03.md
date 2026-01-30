@@ -17,15 +17,45 @@ nobel <- read_csv("data/nobel.csv")
 
 ### Exercise 1
 
-Remove this text, and add your answer for Exercise 1 here. Add code
-chunks as needed. Don’t forget to label your code chunk. Do not use
-spaces in code chunk labels.
+``` r
+nrow(nobel)
+```
+
+    ## [1] 935
+
+``` r
+ncol(nobel)
+```
+
+    ## [1] 26
+
+``` r
+head(nobel)
+```
+
+    ## # A tibble: 6 × 26
+    ##      id firstname    surname  year category affiliation city  country born_date 
+    ##   <dbl> <chr>        <chr>   <dbl> <chr>    <chr>       <chr> <chr>   <date>    
+    ## 1     1 Wilhelm Con… Röntgen  1901 Physics  Munich Uni… Muni… Germany 1845-03-27
+    ## 2     2 Hendrik A.   Lorentz  1902 Physics  Leiden Uni… Leid… Nether… 1853-07-18
+    ## 3     3 Pieter       Zeeman   1902 Physics  Amsterdam … Amst… Nether… 1865-05-25
+    ## 4     4 Henri        Becque…  1903 Physics  École Poly… Paris France  1852-12-15
+    ## 5     5 Pierre       Curie    1903 Physics  École muni… Paris France  1859-05-15
+    ## 6     6 Marie        Curie    1903 Physics  <NA>        <NA>  <NA>    1867-11-07
+    ## # ℹ 17 more variables: died_date <date>, gender <chr>, born_city <chr>,
+    ## #   born_country <chr>, born_country_code <chr>, died_city <chr>,
+    ## #   died_country <chr>, died_country_code <chr>, overall_motivation <chr>,
+    ## #   share <dbl>, motivation <chr>, born_country_original <chr>,
+    ## #   born_city_original <chr>, died_country_original <chr>,
+    ## #   died_city_original <chr>, city_original <chr>, country_original <chr>
+
+The nobel dataset contains 935 observations and 26. Each row represents
+one nobel prize winner.
 
 ### Exercise 2
 
-Remove this text, and add your answer for Exercise 1 here. Add code
-chunks as needed. Don’t forget to label your code chunk. Do not use
-spaces in code chunk labels.
+Add code chunks as needed. Don’t forget to label your code chunk. Do not
+use spaces in code chunk labels.
 
 ### Exercise 3
 

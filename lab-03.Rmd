@@ -19,14 +19,17 @@ nobel <- read_csv("data/nobel.csv")
 
 ### Exercise 1
 
-Remove this text, and add your answer for Exercise 1 here.
-Add code chunks as needed.
-Don't forget to label your code chunk.
-Do not use spaces in code chunk labels.
+```{r}
+nrow(nobel)
+ncol(nobel)
+head(nobel)
+```
+
+The nobel dataset contains `r nrow(nobel)` observations and `r ncol(nobel)`.
+Each row represents one nobel prize winner.
 
 ### Exercise 2
 
-Remove this text, and add your answer for Exercise 1 here.
 Add code chunks as needed.
 Don't forget to label your code chunk.
 Do not use spaces in code chunk labels.
