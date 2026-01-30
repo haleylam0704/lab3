@@ -54,8 +54,15 @@ one nobel prize winner.
 
 ### Exercise 2
 
-Add code chunks as needed. Don’t forget to label your code chunk. Do not
-use spaces in code chunk labels.
+``` r
+nobel_living <- nobel %>%
+  filter((is.na(died_date)), 
+         (!is.na(country)),
+         (gender != "org")
+  )
+```
+
+There are now 228 observations
 
 ### Exercise 3
 
