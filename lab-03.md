@@ -89,7 +89,7 @@ ggplot(data = nobel_living_science, aes(x = country_us)) +
 
 Plot for category of a prize and whether they were in US.
 
-Based on this, the BuzzFeed article is right, that over half were based
+Based on this, the Buzzfeed article is right, that over half were based
 in the US when they won the nobel prize.
 
 ### Exercise 4
