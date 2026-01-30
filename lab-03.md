@@ -94,9 +94,36 @@ in the US when they won the nobel prize.
 
 ### Exercise 4
 
+``` r
+nobel_living_science <- nobel_living_science %>%
+  mutate(
+    born_country_us = ifelse(born_country_original == "USA", "USA", "Other")
+  )
+```
+
+``` r
+summary(nobel_living_science$born_country_us == "USA")
+```
+
+    ##    Mode   FALSE    TRUE 
+    ## logical     123     105
+
+105 were born in the USA.
+
 ### Exercise 5
 
-…
+``` r
+ggplot(data = nobel_living_science, aes(x = country_us, fill = born_country_us)) +
+  geom_bar() +
+  facet_wrap(~ category) +
+  coord_flip()
+```
+
+![](lab-03_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+
+This shows that a significant amount of people who won nobel prizes in
+the US were born outside of the US. This lines up with the
+visualizations in the BuzzFeed article.
 
 ### Exercise 6
 
