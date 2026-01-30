@@ -49,8 +49,8 @@ head(nobel)
     ## #   born_city_original <chr>, died_country_original <chr>,
     ## #   died_city_original <chr>, city_original <chr>, country_original <chr>
 
-The nobel dataset contains 935 observations and 26. Each row represents
-one nobel prize winner.
+The nobel dataset contains 935 observations and 26 variables. Each row
+represents one nobel prize winner.
 
 ### Exercise 2
 
@@ -127,4 +127,26 @@ visualizations in the BuzzFeed article.
 
 ### Exercise 6
 
-…
+``` r
+nobel_living_science %>%
+  filter(country_us == "USA", born_country_us == "Other") %>%
+  count(born_country, sort = TRUE)
+```
+
+    ## # A tibble: 21 × 2
+    ##    born_country       n
+    ##    <chr>          <int>
+    ##  1 Germany            7
+    ##  2 United Kingdom     7
+    ##  3 China              5
+    ##  4 Canada             4
+    ##  5 Japan              3
+    ##  6 Australia          2
+    ##  7 Israel             2
+    ##  8 Norway             2
+    ##  9 Austria            1
+    ## 10 Finland            1
+    ## # ℹ 11 more rows
+
+Germany and UK are the most common. It’s different from the Buzzfeed
+article presumably because this is more updated?

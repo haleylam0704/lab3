@@ -25,7 +25,7 @@ ncol(nobel)
 head(nobel)
 ```
 
-The nobel dataset contains `r nrow(nobel)` observations and `r ncol(nobel)`.
+The nobel dataset contains `r nrow(nobel)` observations and `r ncol(nobel)` variables.
 Each row represents one nobel prize winner.
 
 ### Exercise 2
@@ -92,5 +92,11 @@ ggplot(data = nobel_living_science, aes(x = country_us, fill = born_country_us))
 This shows that a significant amount of people who won nobel prizes in the US were born outside of the US. This lines up with the visualizations in the BuzzFeed article.
 
 ### Exercise 6
+```{r}
+nobel_living_science %>%
+  filter(country_us == "USA", born_country_us == "Other") %>%
+  count(born_country, sort = TRUE)
 
-...
+```
+
+Germany and UK are the most common. It's different from the Buzzfeed article presumably because this is more updated?
