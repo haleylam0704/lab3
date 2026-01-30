@@ -38,7 +38,7 @@ nobel_living <- nobel %>%
   )
 ```
 
-There are now `r nrow(nobel_living)` observations
+There are now `r nrow(nobel_living)` observations of living nobel laureates.
 
 ### Exercise 3
 

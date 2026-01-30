@@ -62,7 +62,7 @@ nobel_living <- nobel %>%
   )
 ```
 
-There are now 228 observations
+There are now 228 observations of living nobel laureates.
 
 ### Exercise 3
 
