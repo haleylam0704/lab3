@@ -1,7 +1,7 @@
 Lab 03 - Nobel laureates
 ================
-Insert your name here
-Insert date here
+Haley Lam
+Jan 30, 2026
 
 ### Load packages and data
 
